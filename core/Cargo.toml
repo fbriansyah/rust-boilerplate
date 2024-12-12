@@ -1,0 +1,20 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = {version = "0.4.38", features = ["serde"] }
+serde = "1.0.215"
+serde_json = "1.0.132"
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "chrono", "mysql", "uuid"] }
+tokio = { version = "1.41.1", features = ["full"] }
+thiserror = "2.0.3"
+anyhow = "1"
+dotenvy = "0.15.7"
+env_logger = "0.11.5"
+uuid = { version = "1.11.0", features = ["v4", "v7", "serde"] }
+testcontainers = "0.23.1"
+mockall = "0.13.0"
+
+[dev-dependencies]
